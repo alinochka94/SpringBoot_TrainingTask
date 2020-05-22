@@ -3,7 +3,6 @@ package com.avioApplication.controller;
 import com.avioApplication.entity.AirportData;
 import com.avioApplication.entity.CitiesEntity;
 import com.avioApplication.services.CitiesService;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/cities")
@@ -21,8 +19,6 @@ public class CitiesController {
 
     @Autowired
     private CitiesService citiesService;
-
-    private final static Logger logger = (Logger) LoggerFactory.getLogger(CitiesController.class);
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)

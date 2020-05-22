@@ -26,8 +26,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
-                .title("Cities Service Rest APIs")
-                .description("This page lists all the rest apis for Cities Service.")
+                .title("Avio Application Rest APIs")
+                .description("This page lists all the rest apis for Avio Application.")
                 .version("1.0-SNAPSHOT")
                 .build();
     }

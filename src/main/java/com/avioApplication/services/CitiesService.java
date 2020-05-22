@@ -18,14 +18,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 @Service
 public class CitiesService {
     @Autowired
     private CitiesRepository citiesRepository;
-
-    private final static Logger logger = (Logger) LoggerFactory.getLogger(CitiesController.class);
 
     public List<CitiesEntity> getCitiesList () {
         List<CitiesEntity> citiesEntities = new ArrayList<CitiesEntity>();
